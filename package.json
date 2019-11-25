@@ -2,6 +2,7 @@
   "name": "email-signature",
   "version": "0.1.0",
   "private": true,
+  "homepage":"https://pipefy.github.io/email-signature",
   "dependencies": {
     "react": "^16.12.0",
     "react-app-polyfill": "^1.0.4",
@@ -15,7 +16,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -33,6 +36,7 @@
     ]
   },
   "devDependencies": {
-    "babel-plugin-macros": "^2.7.0"
+    "babel-plugin-macros": "^2.7.0",
+    "gh-pages": "^2.1.1"
   }
 }
